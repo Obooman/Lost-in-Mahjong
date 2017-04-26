@@ -4,37 +4,60 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=devide-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
 	<title>Document</title>
-	<style>
-		section{
-			transform-style: preserve-3d;
-			perspective: 800px;
-			width: 158px;
-			height: 158px;
-			margin: 200px auto;
-		}
-
-		svg{
-			transition: 1s;
-			transform: translateZ(900px) rotateX(90deg);
-			animation: drop-down 1s forwards;
-			border-radius: 50%;
-		}
-
-		@keyframes drop-down{
-			to{
-				transform: translateZ(0px) rotateX(0);
-			}
-		}
-	</style>
+	<link rel="stylesheet" href="styles/custom-animate.css">
+	<link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
-	<section>
-		<svg width="158" height="158">
-		    <circle id="Oval" stroke="#C04747" stroke-width="12" fill="none"cx="79" cy="79" r="78.5"></circle>
-		</svg>
-		<svg width="158" height="158">
-		    <circle id="Oval" stroke="#C04747" stroke-width="12" fill="none"cx="79" cy="79" r="58.5"></circle>
-		</svg>
-	</section>
+<!-- Logo -->
+<div class="container">
+	<svg class="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+		 viewBox="0 0 192.1 300.7" xml:space="preserve" width="80" height="100">
+		<path class="st0" d="M103.7,130.5L103.7,130.5c-5.5,0-10-4.5-10-10V10c0-5.5,4.5-10,10-10h0c5.5,0,10,4.5,10,10v110.5
+			C113.7,126,109.2,130.5,103.7,130.5z"/>
+		<path class="st0" d="M42.2,52.5h123.1c5.5,0,10,4.5,10,10v0c0,5.5-4.5,10-10,10H42.2l10.1-10L42.2,52.5z"/>
+		<circle class="st0" cx="152.9" cy="24.8" r="14.4"/>
+		<circle class="st0" cx="54.6" cy="24.8" r="14.4"/>
+		<circle class="st0" cx="54.6" cy="98.8" r="14.4"/>
+		<path class="st0" d="M192.1,127.4l-31.4-46.3h-24v0c-0.3,0-0.6,0-0.9,0c-5.5,0-10,4.5-10,10s4.5,10,10,10c0.3,0,0.6,0,0.9,0v0
+			l11.6,0l13.7,21.4l-24.4,15.3H10c-5.5,0-10,4.5-10,10c0,5.5,4.5,10,10,10h137.4v-0.2L192.1,127.4z"/>
+		<path class="st0" d="M101.7,294.1L101.7,294.1c-5.5,0-10-4.5-10-10V177.2c0-5.5,4.5-10,10-10h0c5.5,0,10,4.5,10,10v106.8
+			C111.7,289.6,107.2,294.1,101.7,294.1z"/>
+		<path class="st0" d="M28.1,196.3L28.1,196.3c0-5.5,4.5-10,10-10h127.1c5.5,0,10,4.5,10,10v0c0,5.5-4.5,10-10,10H38.1
+			C32.6,206.3,28.1,201.8,28.1,196.3z"/>
+		<path class="st0" d="M28.1,254.9L28.1,254.9c0-5.5,4.5-10,10-10h127.1c5.5,0,10,4.5,10,10v0c0,5.5-4.5,10-10,10H38.1
+			C32.6,264.9,28.1,260.4,28.1,254.9z"/>
+		<path class="st1" d="M171.4,62.4c0-0.2,0-0.4,0-0.6c-0.3-3.3-3.1-5.8-6.4-5.8c-0.2,0-0.4,0-0.6,0H51.2l6.5,6.5l-6.3,6.3h113
+			c0.2,0,0.4,0,0.6,0c3.3,0,6.1-2.5,6.4-5.8C171.4,62.9,171.4,62.7,171.4,62.4z M60.8,62.5L56.3,58h104.4c-1.1,1.1-1.8,2.7-1.8,4.4
+			c0,1.7,0.7,3.3,1.8,4.4H56.5L60.8,62.5z"/>
+		<circle class="st2" cx="165.1" cy="62.5" r="4.3"/>
+		<path class="st0" d="M28.1,284.2L28.1,284.2c0-5.5,4.5-10,10-10h127.1c5.5,0,10,4.5,10,10v0c0,5.5-4.5,10-10,10H38.1
+			C32.6,294.2,28.1,289.7,28.1,284.2z"/>
+		<circle class="st1" cx="165" cy="284.2" r="8.3"/>
+		<circle class="st2" cx="165" cy="284.2" r="6.5"/>
+		<path class="st0" d="M28.1,225.6L28.1,225.6c0-5.5,4.5-10,10-10h127.1c5.5,0,10,4.5,10,10v0c0,5.5-4.5,10-10,10H38.1
+			C32.6,235.6,28.1,231.1,28.1,225.6z"/>
+		<path class="st1" d="M164.9,219.1H38.1c-3.6,0-6.6,3-6.6,6.6c0,3.6,3,6.6,6.6,6.6h126.8c3.6,0,6.6-3,6.6-6.6
+			C171.5,222,168.5,219.1,164.9,219.1z M164.6,230.1h-126c-2.5,0-4.5-2-4.5-4.5c0-2.5,2-4.5,4.5-4.5h126c2.5,0,4.5,2,4.5,4.5
+			C169.1,228.1,167.1,230.1,164.6,230.1z"/>
+	</svg>
+	<svg class="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+		 viewBox="0 0 192.1 300.7" xml:space="preserve" width="80" height="100">
+		 <circle class="st1" cx="38.1" cy="225.6" r="6.6"/>
+		 <circle class="st2" cx="38.1" cy="225.6" r="4.5"/>
+		 <path class="st0" d="M10,0.4c-5.5,0-10,4.5-10,10c0,5.5,4.5,10,10,10c5.5,0,10-4.5,10-10C20,4.9,15.5,0.4,10,0.4z M10,16.4
+		 	c-3.3,0-6-2.7-6-6s2.7-6,6-6s6,2.7,6,6S13.3,16.4,10,16.4z"/>
+		 <circle class="st2" cx="10" cy="10.4" r="3.9"/>
+		 <path class="st0" d="M10,137.8L10,137.8c-5.5,0-10,4.5-10,10v136.2c0,5.5,4.5,10,10,10h0c5.5,0,10-4.5,10-10V147.8
+		 	C20,142.3,15.5,137.8,10,137.8z M10,292.5c-4.6,0-8.3-3.7-8.3-8.3S5.4,276,10,276c4.6,0,8.3,3.7,8.3,8.3S14.6,292.5,10,292.5z"/>
+		 <circle class="st2" cx="10" cy="284.2" r="6.5"/>
+		 <path class="st0" d="M20.6,46.5l0-11.9h0c0-5.5-4.4-9.9-9.9-9.9s-9.9,4.4-9.9,9.9V52l11.8,11.5L0.8,75.1v41c0,5.5,4.5,10,10,10
+		 	c5.5,0,10-4.5,10-10V80l15.5-16.5L20.6,46.5z M10.8,124.4c-4.6,0-8.3-3.7-8.3-8.3c0-4.6,3.7-8.3,8.3-8.3c4.6,0,8.3,3.7,8.3,8.3
+		 	C19.1,120.7,15.4,124.4,10.8,124.4z"/>
+		 <circle class="st2" cx="10.8" cy="116.1" r="6.6"/>
+	</svg>
+</div>
+<!-- Logo end -->
+<script src="./scripts/main.js"></script> <script>
+</script>
 </body>
 </html>
