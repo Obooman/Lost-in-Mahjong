@@ -2,12 +2,15 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=devide-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
-	<title>Document</title>
-	<link rel="stylesheet" href="styles/custom-animate.css">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+	<title>Lost in Mohjon - 迷雀 - 设计展示</title>
+	<link rel="stylesheet" href="styles/animate-custom.css">
 	<link rel="stylesheet" href="styles/main.css">
 </head>
 <body>
+
+<img class="loading infinite-rotate"  src="assets/bc.png" alt="loading">
+
 <!-- Logo -->
 <div class="container">
 	<svg class="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -39,9 +42,7 @@
 		<path class="st1" d="M164.9,219.1H38.1c-3.6,0-6.6,3-6.6,6.6c0,3.6,3,6.6,6.6,6.6h126.8c3.6,0,6.6-3,6.6-6.6
 			C171.5,222,168.5,219.1,164.9,219.1z M164.6,230.1h-126c-2.5,0-4.5-2-4.5-4.5c0-2.5,2-4.5,4.5-4.5h126c2.5,0,4.5,2,4.5,4.5
 			C169.1,228.1,167.1,230.1,164.6,230.1z"/>
-	</svg>
-	<svg class="logo" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-		 viewBox="0 0 192.1 300.7" xml:space="preserve" width="80" height="100">
+
 		 <circle class="st1" cx="38.1" cy="225.6" r="6.6"/>
 		 <circle class="st2" cx="38.1" cy="225.6" r="4.5"/>
 		 <path class="st0" d="M10,0.4c-5.5,0-10,4.5-10,10c0,5.5,4.5,10,10,10c5.5,0,10-4.5,10-10C20,4.9,15.5,0.4,10,0.4z M10,16.4
@@ -57,6 +58,31 @@
 	</svg>
 </div>
 <!-- Logo end -->
+<div class="content">
+	<div class="mahjong right-bordered bottom-bordered" data-kind="bing">
+		<img src="assets/bing.png" alt="">
+	</div>
+	<div class="mahjong bottom-bordered" data-kind="chicken">
+		<img src="assets/chicken.png" alt="">
+	</div>
+	<div class="mahjong right-bordered top-bordered" data-kind="money">
+		<img src="assets/wan.png" alt="">
+	</div>
+	<div class="mahjong top-bordered" data-kind="zhong">
+		<img src="assets/zhong.png" alt="">
+	</div>
+</div>
+
+<div class="modal">
+	<div class="inner">
+	</div>
+	<div class="modal-close">
+		×
+	</div>
+</div>
+
+<script src="./scripts/fastclick.js"></script>
+<script src="./scripts/common.js"></script>
 <script src="./scripts/main.js"></script> <script>
 </script>
 </body>
